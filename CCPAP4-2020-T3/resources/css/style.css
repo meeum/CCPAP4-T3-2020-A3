@@ -1,0 +1,368 @@
+/* GLOBAL DEFULTS */
+@import 'http://necolas.github.io/normalize.css/8.0.1/normalize.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&family=Candal&family=Darker+Grotesque:wght@300;400;500;600;700;800&family=Happy+Monkey&family=Syncopate:wght@400;700&display=swap');
+
+*  {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darksalmon;
+
+    font-family: 'Darker Grotesque', sans-serif;
+
+    line-height: 1.6;
+}
+
+a {
+    color: #333333;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #E05745;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+/* HEADINGS AND TYPOGRAPHY */
+
+h1,
+h3,
+h4,
+h5 {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
+    color: #333333;
+    font-size: 50px;
+}
+
+h6 {
+    font-family: 'Syncopate', sans-serif;
+    color: #333333;
+    font-size: 30px;
+}
+
+h7 {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #E05745
+}
+
+h2 {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
+    color: #A45A52;
+    font-size: 35px;
+}
+
+/* LAYOUTS */
+.layout-wide  {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 30px;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+/* HEADER, MAIN & FOOTER */
+
+header {
+    background-color: #E05745;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.star-logo img {
+        max-width: 500px;
+        padding-top: 50px;
+}
+
+footer {
+    background-color: #E05745;
+    color: #FFC96F;
+    text-align: center;
+}
+
+main {
+    background-color: bisque;
+}
+
+@media screen and (min-width: 800px)  {
+
+    .about-component {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 80px;
+
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .about {
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .it-me img {
+        max-width: 340px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+        .about-component {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            }
+
+            .about {
+                padding: 40px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .it-me img {
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+
+/* subs form */
+.subscription-wrapper {
+    background-color: #FFC96F;
+    padding-bottom: 40px;
+    line-height: 30px;
+}
+
+.subscription-wrapper label {
+    color: #E05745;
+    display: block;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.subscription-wrapper {
+    background-color: #FFC96F;
+    padding-bottom: 40px;
+    line-height: 30px;
+}
+
+.subscription-wrapper label {
+    color: #E05745;
+    display: block;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+/* NAVIGATION */
+.navigation {
+    background-color: #E05745;
+}
+
+.nav-inner ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-inner li {
+    text-align: center;
+}
+
+.nav-inner a {
+    text-decoration: none;
+    font-size: 20px;
+    color: bisque;
+    }
+}
+
+/* this is for mobile view */
+@media screen and (max-width: 800px) {
+    .nav-inner {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .nav-inner.open {
+        max-height: 100vh;
+    }
+}
+
+
+/*this is for large screen view */
+@media screen and (min-width: 800px) {
+
+    .nav-prompt {
+        display: none;
+    }
+
+    .nav-inner ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+/* MODULES */
+.news-component {
+    padding: 10px;
+}
+
+.news-image {
+    padding: 5px
+}
+
+
+
+@media screen and (min-width: 600px)  {
+
+    .star-logo img {
+        min-width: 300px;
+    }
+
+@media screen and (max-width: 800px) {
+        .star-logo img {
+            max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 600px)  {
+    .photo-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 800px)  {
+    .photo-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+} 
+
+.inspiration-component {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 30px;
+    padding-bottom: 60px;
+}
+
+@media screen and (min-width: 600px)  {
+    .inspiration-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 800px)  {
+    .inspiration-gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+
+    .photography-component {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        padding: 30px;
+        padding-bottom: 60px;
+    }
+    
+    @media screen and (min-width: 600px)  {
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+    }
+    
+    @media screen and (min-width: 800px)  {
+        .photo-gallery {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    .flatlay-component {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        padding: 30px;
+        padding-bottom: 60px;
+    }
+    
+    @media screen and (min-width: 600px)  {
+        .flatlay-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+    }
+    
+    @media screen and (min-width: 800px)  {
+        .flatlay-grid {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+   
+
+/* hero component */
+    .hero-component img {
+        width: 100%;
+        opacity: 70%;
+        filter: sepia(30%);
+    }
+    
+    .hero-component {
+        position: relative;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    
+        text-align: center;
+    
+        display: flex;
+        align-items: center;
+    }
+        
+    .hero-content {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    
+        text-align: center;
+    
+        display: flex;
+        align-items: center;
+    }
+    
+    .hero-component h6 {
+        color: bisque;
+        text-shadow: 1px 1px 10px #333333;
+    }
+}
