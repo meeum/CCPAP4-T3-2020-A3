@@ -1,0 +1,189 @@
+/* GLOBAL DEFAULTS */
+@import 'https://necolas.github.io/normalize.css/8.0.1/normalize.css';
+
+@import url("https://use.typekit.net/bqk8ytr.css");
+
+@import url("https://use.typekit.net/bqk8ytr.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+    font-weight: 300px;
+    font-size: 16px;
+    line-height: 1.8;
+    background-color: white;
+}
+
+a {
+    color: #DB1ECF;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1FE9EB;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+
+
+/* HEADING & TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: neue-haas-unica, sans-serif;
+    color: black;
+    font-weight: 800;
+
+}
+
+h1 {
+    color: rgb(50, 50, 50);
+    font-size: 60px;
+}
+
+h2 {
+    color: rgb(50, 50, 50);
+    font-size: 45px;
+
+}
+
+h3 {
+    color: rgb(96, 96, 96);
+    font-size: 25px ;
+    font-style: italic;
+}
+
+/* LAYOUTS */
+.layout-wide {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 20px;
+    }
+
+
+
+    /* HEADER & MAIN & FOOTER */
+
+header {
+    background-color: whitesmoke;
+}
+
+.logo-wrapper img {
+max-width: 100px;
+align-content: center;
+}
+
+header.layout-wide {
+    align-content: center;
+}
+
+
+@media screen and (min-width: 500px) {
+
+    .site-title {
+        font-size: 35px;
+    }
+    .logo-wrapper img {
+        max-width: 300px;
+    }
+}
+
+header .layout-wide {
+    table-layout: auto;
+    
+}
+
+footer {
+    background-color: #EBE140;
+    text-align: center;
+}
+
+main {
+
+}
+
+
+
+/* NAVIGATION */
+.navigation {
+    background-color: whitesmoke;
+}
+
+.nav-inner ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-inner li {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.nav-inner a {
+    text-decoration: none;
+
+}
+/* this is for mobile view */
+@media screen and (max-width: 800px) {
+
+    .nav-inner {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .nav-inner.open {
+        max-height: 100vh;
+    }
+
+    .nav-inner {
+        padding-bottom: 0;
+    }
+}
+/* this is for large screen view */
+@media screen and (min-width: 800px) {
+
+    .nav-prompt {
+        display: none;
+    }
+
+    .nav-inner ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+/* MODULES */
+.news-component {
+    padding: 20px;
+}
+
+
+@media screen and (min-width: 800px) {
+
+    .news-component {
+        display: grid;
+        grid-template-columns:50% 50%;
+        grid-gap; 50px;
+    }
+}
+
+/* hero components */
+.hero-component {
+
+
+}
