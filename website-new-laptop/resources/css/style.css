@@ -1,0 +1,264 @@
+/* GLOBAL DEFAULTS*/ 
+
+@import'https://necolas.github.io/normalize.css/8.0.1/normalize.css';
+
+
+@import url("https://use.typekit.net/loh5sap.css");
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: "arial";
+    font-size: 12px;
+    line-height: 1.6;
+    color: black;
+
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+
+
+a {
+
+    font-weight: 700; 
+    color: #f5c2c9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d54237;
+}
+
+
+img, 
+iframe {
+    max-width: 100%;
+}
+
+/* HEADINGS AND TYPOGRAPHY */
+
+h1,
+h2,
+h3 
+{
+    color: #1b3f2e;
+}
+
+h1 {
+    font-family: "forma-djr-display";
+    font-weight: 10px;
+    font-size: 20px;
+    line-height: 1;
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-family: "forma-djr-display";
+        font-weight: 100px;
+        font-size: 42px;
+        line-height: 1;
+    }
+
+    h2 {
+        font-family: "forma-djr-display";
+    font-size: 25px;
+    color: black;
+}
+    }
+}
+
+h2 {
+    font-family: "forma-djr-display";
+    font-size: 10px;
+}
+
+
+/* DESKTOP FONT SIXES */
+
+
+
+/* HEADER AND LANDING AND MAIN AND FOOTER*/ 
+
+header {
+    background-color: #1b3f2e;
+}
+
+
+.site-title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "forma-djr-display";
+    
+}
+
+main {
+    background-color: white;
+}
+
+footer {
+    background-color: #1b3f2e;
+    color: #f5c2c9;
+    text-align: center;
+}
+
+
+
+/* LAYOUTS */
+
+.layout-body {
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    max-width: 1000px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .layout-body {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;
+        padding: 1px;
+    }
+}
+
+
+
+/*NAVIGATION*/
+
+.nav-inner ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-inner li {
+    text-align: center;
+    justify-content: right;
+
+}
+
+/* This is for mobile view */
+@media screen and (max-width: 800px) {
+    .nav-inner {
+        max-height: 0;
+        overflow: hidden;
+
+    }
+
+    .nav-inner.open {
+        max-height: 100vh;
+    }
+}
+
+/* This is for large screen view */ 
+@media screen and (min-width: 800px) {
+    .nav-prompt{
+        display: none;
+    }
+
+    .nav-inner ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+
+/*MODULES*/
+
+.about-me1 {
+  padding: 30px;
+}
+
+@media screen and (min-width: 800px) {
+    .about-me1 {
+        padding: 100px;
+        grid-gap: 10px;
+        display: grid; 
+        grid-template-columns: 6fr 4fr;
+    }
+}
+
+.subscription-wrapper {
+    padding: 30px;
+}
+
+.subscription-wrapper label {
+    color: #f5c2c9;
+    display: block;
+}
+
+.gallery img {
+    transition: 1s;
+}
+.gallery a:hover img {
+    transform: scale(1.1);
+
+}
+
+.writing-brag { 
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.writing-brag a {
+color: #1b3f2e;
+}
+
+.writing-brag a:hover {
+    color: #f5c2c9;
+}
+
+.writing-brag li {
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 500px) {
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    grid-gap: 10px;
+}
+}
+
+@media screen and (min-width: 800px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    }
+
+
+.article {
+    padding-top: 20 px;
+    padding-bottom: 20px;
+
+}
+
+.content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px; 
+
+}
+
+@media screen and (min-width:800px) {
+    .article {
+        padding: 80px;
+        text-align: justify;
+    }
+}
+
+
